@@ -6,11 +6,11 @@ using namespace std;
 const int Wide = 30; //??
 const int Tall = 30; //da sa ednakvi vse pak
 
-int x, y, fishX, fishY;
+int x, y, catX, catY;
 
-void fishSpawn(){    //tyka ima oshte neshta ama ne mi se zanimava rn
+void catSpawn(){     //tyka ima oshte neshta ama ne mi se zanimava rn
                     //dobaviane na koga spawn i score
-fishX = rand() % Wide;
-fishY = rand() % Tall;
+catX = rand() % Wide;
+catY = rand() % Tall;
 
 }
