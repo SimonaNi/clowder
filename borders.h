@@ -1,23 +1,16 @@
-#pragma once
+#include <iostream>
+#include <ctime.h> //za spawnvaneto
 
-#include <QWidget>
-#include <QTimer>
+using namespace std;
 
-class MainWindow : public QWidget
-{
-    Q_OBJECT
+const int Wide = 30; //??
+const int Tall = 30; //da sa ednakvi vse pak
 
-public:
-    MainWindow();
-protected:
-    void paintEvent(QPaintEvent *event) override;
-    void keyPressEvent(QKeyEvent *event) override;
+int x, y, catX, catY;
 
-private slots:
-    void onTick();
+void catSpawn(){     //tyka ima oshte neshta ama ne mi se zanimava rn
+                    //dobaviane na koga spawn i score
+catX = rand() % Wide;
+catY = rand() % Tall;
 
-private:
-    QTimer ticker;
-    QRect sq;
-    QPoint dir;
-};
+}
